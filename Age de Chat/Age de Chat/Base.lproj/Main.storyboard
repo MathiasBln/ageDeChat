@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Age_de_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculez votre age de chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zn-f1-pxZ">
+                                <rect key="frame" x="20" y="54" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ly8-1c-yUX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Entrez votre age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yb7-MX-Dpb">
+                                <rect key="frame" x="20" y="114" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7DI-xt-CVl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2G-6N-KLM">
+                                <rect key="frame" x="132" y="164" width="150" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.24242069660000001" blue="0.22475962199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="FyD-0T-UfZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="ZFo-ri-2xK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Calculer">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7o-hg-Gdh"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="yxv-gR-9fz">
+                                <rect key="frame" x="20" y="214" width="374" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="2rb-Aa-Xej"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.24242069660000001" blue="0.22475962199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="sww-rR-Uvq">
+                                <rect key="frame" x="0.0" y="319" width="414" height="577"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCN-tc-SyN">
+                                <rect key="frame" x="20" y="807" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="PJJ-hF-Zfe"/>
+                                    <constraint firstAttribute="width" constant="35" id="pdN-4c-UIG"/>
+                                </constraints>
+                                <state key="normal" image="son"/>
+                                <connections>
+                                    <action selector="soundAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bac-JO-dHo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w2G-6N-KLM" firstAttribute="top" secondItem="Yb7-MX-Dpb" secondAttribute="bottom" constant="20" id="4Pc-uI-LPj"/>
+                            <constraint firstItem="4Zn-f1-pxZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4wh-1K-5Zk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Zn-f1-pxZ" secondAttribute="trailing" constant="20" id="6vS-ky-nqW"/>
+                            <constraint firstItem="4Zn-f1-pxZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="A1d-Ah-fPQ"/>
+                            <constraint firstItem="yxv-gR-9fz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ksl-Y6-0yE"/>
+                            <constraint firstItem="Yb7-MX-Dpb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PBD-xy-HAu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sww-rR-Uvq" secondAttribute="trailing" id="TXk-Vt-cau"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yb7-MX-Dpb" secondAttribute="trailing" constant="20" id="Vss-n8-PPY"/>
+                            <constraint firstItem="Yb7-MX-Dpb" firstAttribute="top" secondItem="4Zn-f1-pxZ" secondAttribute="bottom" constant="20" id="Vtq-2S-KTR"/>
+                            <constraint firstItem="w2G-6N-KLM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="et3-jQ-w5t"/>
+                            <constraint firstItem="iCN-tc-SyN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mBM-KG-izL"/>
+                            <constraint firstAttribute="bottom" secondItem="sww-rR-Uvq" secondAttribute="bottom" id="mIi-2Q-1ry"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yxv-gR-9fz" secondAttribute="trailing" constant="20" id="rt3-mv-Nz5"/>
+                            <constraint firstItem="sww-rR-Uvq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sae-ci-ds5"/>
+                            <constraint firstItem="sww-rR-Uvq" firstAttribute="top" secondItem="yxv-gR-9fz" secondAttribute="bottom" constant="30" id="u2U-hf-yng"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iCN-tc-SyN" secondAttribute="bottom" constant="20" id="v58-ez-2bd"/>
+                            <constraint firstItem="yxv-gR-9fz" firstAttribute="top" secondItem="w2G-6N-KLM" secondAttribute="bottom" constant="10" id="zUX-rz-5Tr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="ageTextfield" destination="Yb7-MX-Dpb" id="eyJ-Ym-nH3"/>
+                        <outlet property="resultLabel" destination="yxv-gR-9fz" id="7wP-Wl-wnQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133" y="139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat" width="6000" height="4000"/>
+        <image name="son" width="64" height="64"/>
+    </resources>
+</document>
